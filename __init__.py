@@ -19,8 +19,10 @@ class TemplateSkill(MycroftSkill):
         if response:
             print('Success!')
             self.speak_dialog("ok")
+            self.enclosure.mouth_text('On')
         else:
             print('An error has occurred.')
+        self.enclosure.reset()
 
     @intent_handler(IntentBuilder("").require("DontWarmMyCoffee"))
     def handle_dontwarmmycoffee_intent(self, message):
@@ -28,9 +30,13 @@ class TemplateSkill(MycroftSkill):
         if response:
             print('Success!')
             self.speak_dialog("ok")
+            self.enclosure.mouth_text('Off')
         else:
             print('An error has occurred.')
+        self.enclosure.reset()
 
 def create_skill():
-    return TemplateSkill() 
+    return TemplateSkill()
+
+ 
 
