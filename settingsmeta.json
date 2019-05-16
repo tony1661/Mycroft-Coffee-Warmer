@@ -1,0 +1,18 @@
+{
+    "name": "Sonoff Host Name or IP Address",
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "ip or host",
+                "fields": [
+                    {
+                        "name": "host",
+                        "type": "text",
+                        "label": "IP or Host
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    }
+}

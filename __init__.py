@@ -5,7 +5,7 @@ import requests # for curl
 #import urllib, json, urllib2
 
 # General Variables
-host = 'http://192.168.40.186/'
+host = 'http://' + self.settings.get('host') + '/'
 
 class TemplateSkill(MycroftSkill):
 
