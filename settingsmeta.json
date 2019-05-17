@@ -1,9 +1,9 @@
 {
-    "name": "Sonoff Host Name or IP Address",
+    "name": "Coffee Warmer Settings",
     "skillMetadata": {
         "sections": [
             {
-                "name": "ip or host",
+                "name": "Sonoff IP / Host Info",
                 "fields": [
                     {
                         "name": "host",
