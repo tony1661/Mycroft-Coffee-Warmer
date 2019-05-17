@@ -5,17 +5,18 @@ import requests # for curl
 #import urllib, json, urllib2
 
 # General Variables
-host = 'http://' + self.settings.get('host') + '/'
+
 
 class TemplateSkill(MycroftSkill):
 
     def __init__(self):
         super(TemplateSkill, self).__init__(name="TemplateSkill")
         self.test = ''
+        self.host = 'http://' + self.settings.get('host') + '/'
 
     @intent_handler(IntentBuilder("").require("WarmMyCoffee"))
     def handle_warmmycoffee_intent(self, message):
-        response = requests.get(host+'on')
+        response = requests.get(self.host+'on')
         if response:
             print('Success!')
             self.speak_dialog("ok")
@@ -26,7 +27,7 @@ class TemplateSkill(MycroftSkill):
 
     @intent_handler(IntentBuilder("").require("DontWarmMyCoffee"))
     def handle_dontwarmmycoffee_intent(self, message):
-        response = requests.get(host+'off')
+        response = requests.get(self.host+'off')
         if response:
             print('Success!')
             self.speak_dialog("ok")
