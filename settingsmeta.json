@@ -8,7 +8,7 @@
                     {
                         "name": "host",
                         "type": "text",
-                        "label": "IP or Host
+                        "label": "IP or Host"
                         "value": ""
                     }
                 ]
