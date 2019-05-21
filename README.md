@@ -8,8 +8,8 @@ A custom Mycroft skill I created to turn my sonoff on and off for my coffee mug 
 Replace the host variable with your sonoff IP address
 
 ## Examples 
-* "Turn on my coffee"
-* "Turn off my coffee"
+* "Turn on my coffee warmer"
+* "Turn off my coffee warmer"
 
 ## Credits 
 Tony Fernandez
